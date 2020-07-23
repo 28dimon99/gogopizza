@@ -1,11 +1,11 @@
 import React from "react";
-import imgSets from "../../../assets/setsImg/1.jpg"
+import imgSauces from "../../../../assets/saucesImg/1.jpg"
 
-const setsItems = (props) =>{
+const SaucesItems = (props) =>{
     return(
         <div>
             <div>
-                <img src={imgSets}/>
+                <img src={imgSauces}/>
 
             </div>
             <p>
@@ -20,4 +20,4 @@ const setsItems = (props) =>{
         </div>
     )
 }
-export default setsItems
+export default SaucesItems

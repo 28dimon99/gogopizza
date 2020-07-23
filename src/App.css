@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 .top-header{
   border-bottom: white 1px solid;
 
@@ -11,4 +12,8 @@
 .nav{
     margin-left: 50px;
     list-style: none;
+}
+
+img{
+    overflow: hidden;
 }

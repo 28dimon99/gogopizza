@@ -1,11 +1,11 @@
 import React from "react";
-import imgDeserts from "../../../assets/./dessertsImg/1.jpg"
+import imgSets from "../../../../assets/setsImg/1.jpg"
 
-const DesertsItems = (props) =>{
+const setsItems = (props) =>{
     return(
         <div>
             <div>
-                <img src={imgDeserts}/>
+                <img src={imgSets}/>
 
             </div>
             <p>
@@ -20,4 +20,4 @@ const DesertsItems = (props) =>{
         </div>
     )
 }
-export default DesertsItems
+export default setsItems

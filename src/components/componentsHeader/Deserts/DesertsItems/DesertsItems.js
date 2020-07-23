@@ -1,11 +1,11 @@
 import React from "react";
-import imgPizza from "../../../assets/pizzaImg/1.jpg"
+import imgDeserts from "../../../../assets/dessertsImg/1.jpg"
 
-const PizzaItems = (props) =>{
+const DesertsItems = (props) =>{
     return(
         <div>
             <div>
-                <img src={imgPizza}/>
+                <img src={imgDeserts}/>
 
             </div>
             <p>
@@ -20,4 +20,4 @@ const PizzaItems = (props) =>{
         </div>
     )
 }
-export default PizzaItems
+export default DesertsItems

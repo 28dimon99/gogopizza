@@ -1,0 +1,11 @@
+.sauces{
+    overflow: hidden;
+}
+.elems{
+    display: grid;
+    grid-template-areas:
+        "elems elems"
+        "elems elems"
+        "elems elems";
+
+}

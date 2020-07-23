@@ -1,5 +1,5 @@
 import React from "react";
-import imgPancakes from "../../../assets/pancakesImg/1.jpg"
+import imgPancakes from "../../../../assets/pancakesImg/1.jpg"
 
 const PancakesItems = (props) =>{
     return(
