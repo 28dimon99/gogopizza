@@ -1,0 +1,147 @@
+.main{
+    margin-top:150px;
+    display: grid;
+    width: 1294px;
+
+
+
+}
+.blockImg {
+    display: grid;
+    width: 1294px;
+    grid-template-areas:
+    'one one two three'
+    'one one four four';
+    grid-gap: 1px;
+    margin-top: 20px;
+}
+
+.one {
+    display: grid;
+    grid-area: one;
+}
+
+.one:hover {
+    -webkit-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    transform: scale(1.8);
+}
+
+.one:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.two {
+    display: grid;
+    grid-area: two;
+}
+
+.two:hover {
+    -webkit-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    transform: scale(1.8);
+}
+
+.two:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.three {
+    display: grid;
+    grid-area: three;
+}
+
+.three:hover {
+    -webkit-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    transform: scale(1.8);
+}
+
+.three:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.four {
+    display: grid;
+    grid-area: four;
+}
+
+
+.four:hover {
+    -webkit-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    transform: scale(1.8);
+}
+
+.four:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+
+.pizzaLinks {
+    display: grid;
+    width: 1294px;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: solid gray 1px;
+    padding-bottom: 30px;
+}
+.pizzaLinks a{
+    font-size: 40px;
+    font-family: Comfortaa!important;
+    color: #9b959b;
+    text-decoration: none;
+}
+.pizzaLinks a:hover{
+    border-bottom: solid 3px gray;
+}
+
+.drinks img{
+    display: grid;
+    width: 1294px;
+}
+.drinks h2 {
+    text-align: center;
+}
+
+
+.allButton {
+    display: grid;
+    width: 1294px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.allButton button{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #e29717;
+    color: white;
+    border: solid 1px #9b959b;;
+    font-family: Comfortaa!important;
+}
+
+
+.icons img {
+    width: 100px;
+    height: 100px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 1294px;
+    grid-column-gap: 5px;
+
+}

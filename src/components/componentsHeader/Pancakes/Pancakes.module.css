@@ -1,5 +1,8 @@
 .pancakes{
     overflow: hidden;
+    width: 1294px;
+    text-align: center;
+    margin-top: 158px;
 }
 .elems{
     display: grid;

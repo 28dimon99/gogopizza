@@ -1,11 +1,11 @@
 import React from "react";
-import imgDrinks from "../../../../assets/drinksImg/1.jpg"
+
 
 const DrinksItems = (props) =>{
     return(
         <div>
             <div>
-                <img src={imgDrinks}/>
+                <img src={props.img}/>
 
             </div>
             <p>

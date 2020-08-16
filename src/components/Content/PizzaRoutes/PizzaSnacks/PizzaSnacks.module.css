@@ -1,0 +1,12 @@
+.PizzaSnacksText{
+    text-align: center;
+
+}
+
+.PizzaSnacks{
+    display: grid;
+    margin-bottom: 30px;
+}
+.PizzaSnacksText img{
+    margin: 0 auto;
+}

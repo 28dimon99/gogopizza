@@ -1,0 +1,11 @@
+.pizzaNewsText{
+    text-align: center;
+}
+
+.pizzaNews {
+    display: grid;
+    margin-bottom: 30px;
+}
+.pizzaNewsText img{
+    margin: 0 auto;
+}

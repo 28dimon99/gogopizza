@@ -1,0 +1,11 @@
+.contentNav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: large;
+
+}
+.contentNav li{
+    list-style: none;
+    text-decoration: none;
+}
+

@@ -1,0 +1,22 @@
+.private{
+    display: grid;
+    height: 600px;
+    margin-top: 150px;
+    border: solid 1px black;
+    grid-template-columns: 2fr 2fr;
+    padding: 50px;
+}
+
+.auth{
+  display: grid;
+
+
+}
+
+.register{
+      display: grid;
+      margin-top: 130px;
+      border-left: solid 1px gray;
+      padding-left: 50px;
+
+}

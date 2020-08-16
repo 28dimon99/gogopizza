@@ -1,0 +1,12 @@
+.pizzasText{
+    text-align: center;
+
+}
+
+.pizzas{
+    display: grid;
+    margin-bottom: 30px;
+}
+.pizzasText img{
+    margin: 0 auto;
+}

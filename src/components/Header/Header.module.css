@@ -1,0 +1,45 @@
+.mainHeader{
+    display: grid;
+    width: 1294px;
+    position: fixed;
+}
+
+.topNav img{
+    width:200px;
+    height: 50px;
+}
+
+.topNav {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    padding: 10px;
+    border-bottom: solid 2px white;
+
+}
+
+.bottomNav{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    padding: 10px;
+}
+
+
+.topNav a{
+    color: white;
+    text-decoration: none;
+}
+.bottomNav a{
+    color: white;
+    text-decoration: none;
+}
+
+.topNav a:hover{
+    color:gold;
+}
+.bottomNav a:hover{
+    color:gold;
+}

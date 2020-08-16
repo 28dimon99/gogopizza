@@ -1,0 +1,20 @@
+.stocksText{
+    text-align: center;
+    margin-top: 158px;
+}
+
+.stocks img{
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    width: 1294px;
+    overflow: hidden;
+
+
+}
+.stocksItems img{
+    width: 635px;
+    height: 635px;
+    overflow: hidden;
+    grid-auto-columns: 1fr 1fr;
+    padding:  6px;
+}

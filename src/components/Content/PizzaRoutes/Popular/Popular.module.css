@@ -1,0 +1,12 @@
+.PopularText{
+    text-align: center;
+
+}
+
+.Popular{
+    display: grid;
+    margin-bottom: 30px;
+}
+.PopularText img{
+    margin: 0 auto;
+}
