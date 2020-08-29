@@ -13,7 +13,7 @@ const PizzaItems = (props) =>{
                     {props.price}
                     {props.description}
                 </p>
-
+            <button>Добавить в корзину</button>
         </div>
     )
 }

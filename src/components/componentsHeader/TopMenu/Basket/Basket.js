@@ -1,11 +1,18 @@
 import React from "react";
+import s from "./Basket.module.css"
 
+class Basket extends React.Component{
 
-const Basket = (props) =>{
-    return(
-        <div>
+    render() {
+
+        return(
+
+        <div className={s.basket}>
 
         </div>
     )
+    }
+
+
 }
 export default Basket

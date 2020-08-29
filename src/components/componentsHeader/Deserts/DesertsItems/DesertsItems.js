@@ -1,19 +1,27 @@
 import React from "react";
+import s from "./DesertsItems.module.css"
+
 
 
 const DesertsItems = (props) =>{
     return(
-        <div>
-            <div>
+        <div className={s.goods}>
+            <div className={s.imgItems}>
                 <img src={props.img}/>
 
             </div>
-            <p>
-                {props.id}
-                {props.name}
-                {props.price}
-                {props.description}
-            </p>
+            <div className={s.items}>
+                <p>
+                    {props.id}
+                    {props.name}
+                    {props.price}
+                    {props.description}
+                </p>
+            </div>
+        <div className={s.but}>
+            <button>Добавить в корзину</button>
+        </div>
+
 
 
 

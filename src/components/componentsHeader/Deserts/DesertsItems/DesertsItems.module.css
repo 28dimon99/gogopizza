@@ -1,0 +1,24 @@
+.goods:hover {
+    display: grid;
+    border: 5px solid gray;
+}
+
+.imgItems img{
+    display: grid;
+    width: 400px;
+}
+.items{
+    display: grid;
+    width: 300px;
+
+}
+
+.but button{
+    width: 150px;
+    height: 30px;
+    display: grid;
+    border-radius: 10px;
+    background-color: #e29717;
+    border: solid #e29717;
+    color: white;
+}
