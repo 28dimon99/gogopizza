@@ -37,15 +37,9 @@ import PizzaContainer from "./components/componentsHeader/Pizza/PizzaContainer";
 
 class App extends React.Component {
     componentDidMount() {
-
-
-    /*    axios.get('http://localhost:3000/db.json').then(({data}) =>{
-            this.props.setPizzas(data.pizza)
-        })*/
         this.props.initializeApp();
     }
     render() {
-
         return (
             <div className={s.wrapper}>
                 <Header/>
@@ -79,7 +73,7 @@ class App extends React.Component {
                     <Route exact path="/pizzaSnacks" component={PizzaSnacks}/>
                     <Route exact path="/pizzaNews" component={PizzaNews}/>
 
-                    <Redirect from="/" to="/main"/>
+                    {/*<Redirect from="/" to="/main"/>*/}
                 </Switch>
 
                 <Footer/>

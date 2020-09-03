@@ -2,9 +2,12 @@ import React from "react";
 
 
 const PizzaItems = (props) =>{
+    if(!props.pizza){
+        return <div>Загрузка</div>
+    }
     return(
         <div>
-            <div >
+            <div>
                 <img src={props.img}/>
             </div >
                 <p>

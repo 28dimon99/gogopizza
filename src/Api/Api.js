@@ -1,10 +1,14 @@
-import * as axios from "axios/index";
+/*import * as axios from "axios/index";
+
 
 
 const instanse = axios.create({
     withCredentials: true,
-    baseURL: `http://localhost:3000/db.json/`
-});
+    baseURL: 'http://localhost:3000/db.json'
+})/!*.then(response =>{
+    debugger
+    getPizzaUrl(response.data.pizza)
+});*!/
 
 export const authAPI = {
     getAuth() {
@@ -13,7 +17,8 @@ export const authAPI = {
 }
 
 export const pizzaAPI = {
-    getPizza(payload) {
-        return instanse.get(`pizza`, {payload:payload})
+
+    getPizza() {
+        return instanse.get(`/pizza`)
     }
-}
+}*/
