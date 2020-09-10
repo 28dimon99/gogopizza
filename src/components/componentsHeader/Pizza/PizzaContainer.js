@@ -1,34 +1,30 @@
 import React from "react"
 import {Pizza} from "./Pizza";
+import {compose} from "redux";
 import {connect} from "react-redux";
-import * as axios from "axios";
-import {setDataPizza} from "../../../redux/Redusers/pizzaReduser";
+import {getPizzaPageAC} from "../../../redux/Redusers/pizzaReducer";
 
-
-
-export class PizzaContainer extends React.Component{
-    componentDidMount() {
-        axios.get('http://localhost:3000//db.json/').then(response =>{
-            this.props.setDataPizza(response.data.data.pizza)
-        });
-    }
-    render() {
-        return(
-            <Pizza {...this.props}/>
-        )
-    }
-}
 
 let mapStateToProps = (state) => {
+
     return {
-        pizza: state.pizza,
+        pizzaPage: state.pizzaPage,
     }
 };
 
 let mapDispatchToProps = (dispatch) => {
     return {
+        getPizza:() => {
+            dispatch(getPizzaPageAC());
+        }
     }
 };
 
-export default
-    connect(mapStateToProps,{setDataPizza}, mapDispatchToProps)(PizzaContainer);
+
+export default compose(
+    connect(mapStateToProps, mapDispatchToProps),
+
+)(Pizza);
+
+
+

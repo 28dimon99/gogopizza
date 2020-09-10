@@ -1,3 +1,4 @@
+/*
 
 import {getDataItems} from "./authReduser";
 const SET_INITIALIZED_SUCCESS= 'SET_INITIALIZED_SUCCESS';
@@ -29,3 +30,4 @@ export const initializeApp = () => (dispatch) => {
         });
 }
 export default appReducer;
+*/

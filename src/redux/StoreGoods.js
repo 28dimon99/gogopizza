@@ -1,3 +1,5 @@
+/*
+
 
 let store = {
     _state: {
@@ -317,10 +319,16 @@ let store = {
         },
         subscribe(observer){
             this._callSubscriber = observer;
-        }
+        },
+
+     /!*   dispatch(action){
+        this._state.pizzaPage = pizzaReducer(this._state.pizzaPage, action)
+            this._callSubscriber(this._state)
+        }*!/
 
 }
 
 window.store = store;
 
 export default store
+*/

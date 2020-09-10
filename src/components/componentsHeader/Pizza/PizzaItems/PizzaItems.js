@@ -2,14 +2,13 @@ import React from "react";
 
 
 const PizzaItems = (props) =>{
-    if(!props.pizza){
-        return <div>Загрузка</div>
-    }
+
+
     return(
         <div>
             <div>
                 <img src={props.img}/>
-            </div >
+            </div>
                 <p>
                     {props.id}
                     {props.name}

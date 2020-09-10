@@ -1,5 +1,4 @@
 import React from 'react';
-import store from './redux/reduxStore'
 import {Switch, Route, Redirect, withRouter, BrowserRouter} from "react-router-dom";
 
 import {Sets} from "./components/componentsHeader/Sets/Sets";
@@ -24,21 +23,21 @@ import Menu from "./components/Sidebar/Menu";
 import Sidebar from "./components/Sidebar/Sidebar";
 import {Main} from "./components/componentsHeader/TopMenu/Main/Main";
 import Basket from "./components/componentsHeader/TopMenu/Basket/Basket";
-import {Provider, connect} from "react-redux";
-import {compose} from "redux";
-import {initializeApp} from "./redux/Redusers/appRedusers";
-//import PizzaContainer from "./components/componentsHeader/Pizza/PizzaContainer";
-import {fieldArrayFieldsPropTypes as axios} from "redux-form";
-//import {setPizzas} from "./redux/Redusers/setPizzasReduser";
-import {Pizza} from "./components/componentsHeader/Pizza/Pizza";
 import PizzaContainer from "./components/componentsHeader/Pizza/PizzaContainer";
+
+//import {Provider, connect} from "react-redux";
+//import {compose} from "redux";
+//import {initializeApp} from "./redux/Redusers/appRedusers";
+//import PizzaContainer from "./components/componentsHeader/Pizza/PizzaContainer";
+//import {fieldArrayFieldsPropTypes as axios} from "redux-form";
+//import {setPizzas} from "./redux/Redusers/setPizzasReduser";
+//import {Pizza} from "./components/componentsHeader/Pizza/Pizza";
+
 
 
 
 class App extends React.Component {
-    componentDidMount() {
-        this.props.initializeApp();
-    }
+
     render() {
         return (
             <div className={s.wrapper}>
@@ -54,7 +53,7 @@ class App extends React.Component {
                     <Route exact path="/basket" component={Basket}/>
 
                     <Route exact path="/pizza"
-                           render={() => <PizzaContainer /*state={this.props.state.pizzaPage}*//>}/>
+                           render={() => <PizzaContainer />}/>
                     <Route exact path="/sets"
                            render={() => <Sets state={this.props.state.setsPage}/>}/>
                     <Route exact path="/costructor" component={ConstructorPizza}/>
@@ -73,7 +72,7 @@ class App extends React.Component {
                     <Route exact path="/pizzaSnacks" component={PizzaSnacks}/>
                     <Route exact path="/pizzaNews" component={PizzaNews}/>
 
-                    {/*<Redirect from="/" to="/main"/>*/}
+                    <Redirect from="/" to="/main"/>
                 </Switch>
 
                 <Footer/>
@@ -98,7 +97,7 @@ class App extends React.Component {
 )(App);*/
 
 
-const mapStateToProps = (state) => ({
+/*const mapStateToProps = (state) => ({
     initialized: state.app.initialized
 });
 
@@ -114,4 +113,5 @@ const AppJSgogo = (props) => {
     </BrowserRouter>
 };
 
-export default AppJSgogo
+export default AppJSgogo*/
+export default App

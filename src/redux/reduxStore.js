@@ -1,7 +1,37 @@
-import {applyMiddleware, combineReducers, compose, createStore} from "redux";
+import {combineReducers, createStore} from "redux";
+import pizzaReducer from "./Redusers/pizzaReducer";
+
+
+let reducers = combineReducers({
+    pizzaPage: pizzaReducer,
+})
+let store= createStore(reducers)
+export default store
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import {applyMiddleware, combineReducers, compose, createStore} from "redux";
 import thunkMiddleware from "redux-thunk";
 
-import appReducer from "./Redusers/appRedusers";
+//import appReducer from "./Redusers/appRedusers";
 import pizzaReducer from "./Redusers/pizzaReduser";
 
 
@@ -10,8 +40,8 @@ import pizzaReducer from "./Redusers/pizzaReduser";
 
 
 let reducers = combineReducers({
-    pizza: pizzaReducer,
-    app: appReducer
+    pizzaReducer: pizzaReducer,
+    /!*app: appReducer*!/
 });
 
 //let store = createStore (reducers, applyMiddleware(thunkMiddleware));
@@ -20,4 +50,4 @@ const store = createStore(reducers, composeEnhancers(applyMiddleware(thunkMiddle
 window.__store__ = store;
 
 
-export default store;
+export default store;*/

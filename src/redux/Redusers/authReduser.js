@@ -1,3 +1,4 @@
+/*
 import {authAPI} from "../../Api/Api";
 
 
@@ -41,7 +42,7 @@ export const getDataItems = () => async (dispatch) => {
         dispatch(setDataItems(id, img, name, prise, description));
     }
 };
-/*//Thunk для логинизации
+/!*!//Thunk для логинизации
 export const login = (email, password, rememberMe, captcha) => async (dispatch) => {
     let response = await authAPI.login(email, password, rememberMe, captcha);
     if (response.data.resultCode === 0) {
@@ -62,5 +63,6 @@ export const logout = () => async (dispatch) => {
     if (response.data.resultCode === 0) {
         dispatch(setAuthUserData(null, null, null, false))
     }
-};*/
+};*!/
 export default authReducer
+*/
