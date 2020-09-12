@@ -23,7 +23,8 @@ import Menu from "./components/Sidebar/Menu";
 import Sidebar from "./components/Sidebar/Sidebar";
 import {Main} from "./components/componentsHeader/TopMenu/Main/Main";
 import Basket from "./components/componentsHeader/TopMenu/Basket/Basket";
-import PizzaContainer from "./components/componentsHeader/Pizza/PizzaContainer";
+import {PizzaContainer} from "./components/componentsHeader/Pizza/PizzaContainer";
+
 
 //import {Provider, connect} from "react-redux";
 //import {compose} from "redux";
@@ -53,7 +54,7 @@ class App extends React.Component {
                     <Route exact path="/basket" component={Basket}/>
 
                     <Route exact path="/pizza"
-                           render={() => <PizzaContainer />}/>
+                           render={() => <PizzaContainer/>}/>
                     <Route exact path="/sets"
                            render={() => <Sets state={this.props.state.setsPage}/>}/>
                     <Route exact path="/costructor" component={ConstructorPizza}/>

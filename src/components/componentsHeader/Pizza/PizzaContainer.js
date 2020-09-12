@@ -1,14 +1,15 @@
 import React from "react"
+
 import {Pizza} from "./Pizza";
-import {compose} from "redux";
 import {connect} from "react-redux";
 import {getPizzaPageAC} from "../../../redux/Redusers/pizzaReducer";
+
 
 
 let mapStateToProps = (state) => {
 
     return {
-        pizzaPage: state.pizzaPage,
+        pizza: state.pizzaPage,
     }
 };
 
@@ -21,10 +22,10 @@ let mapDispatchToProps = (dispatch) => {
 };
 
 
-export default compose(
-    connect(mapStateToProps, mapDispatchToProps),
+export const PizzaContainer = connect(mapStateToProps, mapDispatchToProps)
 
-)(Pizza);
+(Pizza);
+
 
 
 

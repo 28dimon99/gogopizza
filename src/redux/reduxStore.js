@@ -5,8 +5,15 @@ import pizzaReducer from "./Redusers/pizzaReducer";
 let reducers = combineReducers({
     pizzaPage: pizzaReducer,
 })
-let store= createStore(reducers)
+let store = createStore(reducers)
 export default store
+
+
+
+
+
+
+
 
 
 

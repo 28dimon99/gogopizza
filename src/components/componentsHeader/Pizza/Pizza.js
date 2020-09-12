@@ -11,7 +11,6 @@ export class Pizza extends React.Component {
 
     componentDidMount() {
         this.props.getPizza();
-
     }
 
 
