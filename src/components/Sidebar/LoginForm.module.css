@@ -1,0 +1,8 @@
+.login{
+    display: grid;
+    height: 600px;
+    margin-top: 150px;
+    border: solid 1px black;
+    grid-template-columns: 2fr 2fr;
+    padding: 50px;
+}

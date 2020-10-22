@@ -1,18 +1,27 @@
 import React from "react";
 import s from "./Basket.module.css"
 
-class Basket extends React.Component{
 
-    render() {
+export class Basket extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-        return(
+    componentDidMount() {
 
-        <div className={s.basket}>
-
-        </div>
-    )
     }
 
 
+    render() {
+
+        console.log(this.props);
+
+        return (
+            <div className={s.basket}>
+
+                </div>
+
+        )
+    }
+
 }
-export default Basket

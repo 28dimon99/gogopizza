@@ -1,22 +1,25 @@
 import React from "react";
-import * as axios from "axios/index";
+import {Sets} from "./Sets";
+import {connect} from "react-redux";
+import {getSetsPageAC} from "../../../redux/Redusers/setsReducer";
 
 
 
-
-class SetsContainer extends React.Component{
-    componentDidMount() {
-        axios.get().then(response =>{
-
-        });
+let mapStateToProps = (state)=>{
+    return {
+        sets: state.setsPage
     }
-    render() {
-        return(
-            <div>
 
-            </div>
-        )
+
+}
+let mapDispatchToProps =(dispatch)=>{
+    return{
+        getSets:()=>{
+            dispatch(getSetsPageAC())
+        }
     }
+
 }
 
-export default SetsContainer
+
+export const SetsContainer = connect(mapStateToProps, mapDispatchToProps)(Sets)

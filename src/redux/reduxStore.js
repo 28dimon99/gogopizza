@@ -1,9 +1,23 @@
 import {combineReducers, createStore} from "redux";
 import pizzaReducer from "./Redusers/pizzaReducer";
+import setsReducer from "./Redusers/setsReducer";
+import pancakesReducer from "./Redusers/pancakesReducer";
+import snacksReducer from "./Redusers/snacksReducer";
+import saucesReducer from "./Redusers/saucesReducer";
+import dessertsReducer from "./Redusers/dessertsReducer";
+import drinksReducer from "./Redusers/drinksReducer";
+import {reducer as formReducer} from 'redux-form';
 
 
 let reducers = combineReducers({
+    form: formReducer,
     pizzaPage: pizzaReducer,
+    setsPage: setsReducer,
+    pancakesPage: pancakesReducer,
+    snacksPage: snacksReducer,
+    saucesPage: saucesReducer,
+    dessertsPage: dessertsReducer,
+    drinksPage: drinksReducer
 })
 let store = createStore(reducers)
 export default store

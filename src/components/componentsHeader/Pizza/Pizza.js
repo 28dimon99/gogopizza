@@ -15,13 +15,14 @@ export class Pizza extends React.Component {
 
 
     render() {
-        debugger
+
         console.log(this.props);
+        debugger
         return (
             <div className={s.pizza}>
                 <img src={imgPizza}/>
                 <div className={s.elems}>
-                    {this.props.pizza.map && this.props.pizza.map((p) => <PizzaItems
+                {this.props.pizza.pizzaPage.pizza.map && this.props.pizza.pizzaPage.pizza.map((p) => <PizzaItems
                         key={p.id} img={p.img} id={p.id} name={p.name} price={p.prise} description={p.description}/>)}
                 </div>
 

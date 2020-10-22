@@ -1,19 +1,26 @@
+.goods {
+    display: grid;
+    grid-column-end: auto;
+    width: 450px;
+    height: 450px;
+    margin: 10px;
+
+}
+.imgItems img{
+    width: 450px;
+    height: 350px;
+}
 .goods:hover {
     display: grid;
     border: 5px solid gray;
 }
 
-.imgItems img{
-    display: grid;
-    width: 400px;
-}
 .items{
     display: grid;
-    width: 300px;
-
 }
 
-.but button{
+
+.items button {
     width: 150px;
     height: 30px;
     display: grid;
@@ -21,4 +28,5 @@
     background-color: #e29717;
     border: solid #e29717;
     color: white;
+    margin-left: 150px;
 }

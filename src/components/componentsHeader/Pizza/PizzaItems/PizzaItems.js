@@ -3,7 +3,6 @@ import React from "react";
 
 const PizzaItems = (props) =>{
 
-
     return(
         <div>
             <div>
@@ -15,6 +14,7 @@ const PizzaItems = (props) =>{
                     {props.price}
                     {props.description}
                 </p>
+
             <button>Добавить в корзину</button>
         </div>
     )

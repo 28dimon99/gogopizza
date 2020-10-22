@@ -1,6 +1,7 @@
 
 const GET_DATA_PIZZA = 'GET_DATA_PIZZA';
 
+
 let initialState = {
     pizzaPage: {
         pizza: [
@@ -48,6 +49,7 @@ let initialState = {
             }
 
         ],
+
     },
 }
 const pizzaReducer = (state = initialState, action) => {
@@ -56,7 +58,7 @@ const pizzaReducer = (state = initialState, action) => {
         case GET_DATA_PIZZA: {
             return {
                 ...state,
-                pizzaPage: action.pizzaPage
+                pizza: action.pizzaPage
             }
         }
         default:
@@ -64,5 +66,6 @@ const pizzaReducer = (state = initialState, action) => {
     }
 };
 export const getPizzaPageAC = () => ({type: GET_DATA_PIZZA })
+
 
 export default pizzaReducer

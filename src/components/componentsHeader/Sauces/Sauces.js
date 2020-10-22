@@ -4,15 +4,29 @@ import SaucesItems from "./SaucesItems/SaucesItems";
 import s from "./Sauces.module.css"
 
 
-export const Sauces = (props) =>{
-    let saucesElements = props.state.sauces.map(s => <SaucesItems
-        key={s.key}  img={s.img} id={s.id} name={s.name} price ={s.prise} description={s.description} />)
-    return(
-        <div className={s.sauces}>
-            <img src={imgSauces} alt=""/>
-            <div className={s.elems}>
-                {saucesElements}
+export class Sauces extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+        this.props.getSauces()
+    }
+
+    render() {
+        console.log(this.props);
+        return (
+            <div className={s.sauces}>
+                <img src={imgSauces}/>
+                <div className={s.elems}>
+                    {this.props.sauces.saucesPage.sauces.map && this.props.sauces.saucesPage.sauces.map ((p) =>
+                        <SaucesItems
+                            key={p.id} img={p.img} id={p.id} name={p.name} price={p.prise}
+                            description={p.description}/>)}
+                </div>
+
+
             </div>
-        </div>
-    )
+        )
+    }
 }

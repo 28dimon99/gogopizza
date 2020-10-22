@@ -22,9 +22,7 @@ let mapDispatchToProps = (dispatch) => {
 };
 
 
-export const PizzaContainer = connect(mapStateToProps, mapDispatchToProps)
-
-(Pizza);
+export const PizzaContainer = connect(mapStateToProps, mapDispatchToProps)(Pizza);
 
 
 
